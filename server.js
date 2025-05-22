@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-
+app.use(express.static('views'));
 /** SQL: Ejemplo de inserción **/
 app.post('/example/sql', async (req, res) => {
   const { username, password } = req.body;
