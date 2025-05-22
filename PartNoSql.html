@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+</head>
+<body>
+    
+
+  <div>
+        <h1>Connected to Firestore</h1>
+        <button id="loadDataBtn">Show all documents in console</button>
+    </div>
+
+    <div>
+        <h1>Add student to the database</h1>
+
+        <label for="id">Student Code:</label>
+        <input type="text" id="id" placeholder="Ej: 30003625"><br><br>
+        
+        <label for="name">name:</label>
+        <input type="text" id="name" placeholder="Ej: memo"><br><br>
+
+        <label for="carera">carrera:</label>
+        <input type="text" id="carrera" placeholder="Ej: multi"><br><br>
+
+        <label for="edad">edad:</label>
+        <input type="number" min="0"  id="edad" placeholder="Ej: 18"><br><br>
+
+        <button id="addDocBtn">Add Student</button>
+    </div>
+    <div>
+        <h1>Get student by id</h1>
+
+        <label for="getid">Student Code:</label>
+        <input type="text" id="getid" placeholder="Ej: 30003625"><br><br>
+
+        <button id="getDocBtn">Get Student</button>
+    </div>
+
+
+     <script type="module" src="./frontend/Nosql.js" > </script>
+</body>
+</html>

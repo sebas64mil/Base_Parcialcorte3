@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed DB Proyect</title>
+</head>
+
+<body>
+
+
+
+<div>
+    <!-- Players Inputs -->
+    <h3>Players</h3>
+    <label for="name" class="inputText">
+            <h6>Name player</h6>
+    </label>
+    <input type="text" id="name" class="inputContain" placeholder="Ej: Juan Pérez">
+
+    <label for="minutesPlayed" class="inputText">
+            <h6>Minutes Played</h6>
+    </label>
+    <input type="number" min="0" id="minutesPlayed" class="inputContain" placeholder="10">
+
+    <label for="numberOfPasses" class="inputText">
+            <h6>Number Of Passes</h6>
+    </label>
+    <input type="number" min="0" id="numberOfPasses" class="inputContain" placeholder="10">
+
+    <label for="shotAcurracy" class="inputText">
+            <h6>Shot Accuracy</h6>
+    </label>
+    <input type="number" min="0" id="shotAcurracy" class="inputContain" placeholder="10">
+
+    <label for="missedGoals" class="inputText">
+            <h6>Missed Goals</h6>
+    </label>
+    <input type="number" min="0" id="missedGoals" class="inputContain" placeholder="10">
+
+    <label for="cards" class="inputText">
+            <h6>Cards</h6>
+    </label>
+    <input type="number" min="0" id="cards" class="inputContain" placeholder="10">
+
+    <button id="SetPlayerButton" class="ButtonGeneral">
+        <h6>Set Data</h6>
+    </button>
+</div>
+
+<div>
+    <!-- Teams Inputs -->
+    <h3>Teams</h3>
+    <label for="nameTeam" class="inputText">
+            <h6>Team Name</h6>
+    </label>
+    <input type="text" id="nameTeam" class="inputContain" placeholder="Ej: FC Barcelona">
+
+    <label for="squad" class="inputText">
+            <h6>Squad</h6>
+    </label>
+    <input type="number" min="0" id="squad" class="inputContain" placeholder="23">
+
+    <label for="positionTable" class="inputText">
+            <h6>Position Table</h6>
+    </label>
+    <input type="number" min="0" id="positionTable" class="inputContain" placeholder="1">
+
+    <label for="coach" class="inputText">
+            <h6>Coach</h6>
+    </label>
+    <input type="text" id="coach" class="inputContain" placeholder="Ej: Pep Guardiola">
+
+    <button id="SetTeamButton" class="ButtonGeneral">
+        <h6>Set Team</h6>
+    </button>
+</div>
+
+<div>
+    <!-- Matches Inputs -->
+    <h3>Matches</h3>
+    <label for="NameTeam1" class="inputText">
+            <h6>Team 1 Name</h6>
+    </label>
+    <input type="text" id="NameTeam1" class="inputContain" placeholder="Ej: FC Barcelona">
+
+    <label for="NameTeam2" class="inputText">
+            <h6>Team 2 Name</h6>
+    </label>
+    <input type="text" id="NameTeam2" class="inputContain" placeholder="Ej: Real Madrid">
+
+    <label for="location" class="inputText">
+            <h6>Location</h6>
+    </label>
+    <input type="text" id="location" class="inputContain" placeholder="Ej: Camp Nou">
+
+    <label for="result" class="inputText">
+            <h6>Result</h6>
+    </label>
+    <input type="number" min="0" id="result" class="inputContain" placeholder="2-1">
+
+    <label for="numberOfSpectators" class="inputText">
+            <h6>Number Of Spectators</h6>
+    </label>
+    <input type="number" min="0" id="numberOfSpectators" class="inputContain" placeholder="50000">
+
+    <button id="SetMatchButton" class="ButtonGeneral">
+        <h6>Set Match</h6>
+    </button>
+</div>
+
+<script src="./frontend/sql.js"></script>
+
+</body>
