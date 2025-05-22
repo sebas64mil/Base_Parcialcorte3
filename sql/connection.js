@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 const config = {
     host: 'localhost',
     user: 'root',
-    password: 'Memin_2522',
+    password: 'root',
     database: 'droptodrop'
 };
 
